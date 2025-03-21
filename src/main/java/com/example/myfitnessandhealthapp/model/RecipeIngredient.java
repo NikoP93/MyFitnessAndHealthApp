@@ -8,6 +8,7 @@ public class RecipeIngredient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int recipeIngredientid;
+    private double weightInGrams;
 
     @ManyToOne
     @JoinColumn(name = "recipeidfk",referencedColumnName = "recipeid")
@@ -39,5 +40,13 @@ public class RecipeIngredient {
 
     public void setRecipeIngredientid(int recipeIngredientid) {
         this.recipeIngredientid = recipeIngredientid;
+    }
+
+    public double getWeightInGrams() {
+        return weightInGrams;
+    }
+
+    public void setWeightInGrams(double weight) {
+        this.weightInGrams = weight;
     }
 }
