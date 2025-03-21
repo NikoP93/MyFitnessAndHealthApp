@@ -17,6 +17,10 @@ public class Ingredient {
     private double fat;
     private double kcal;
 
+    public Ingredient(){
+
+    }
+
     public Ingredient(String name, double protein,double carbs,double fat,double kcal) {
         this.name = name;
         this.protein = protein;
@@ -25,12 +29,12 @@ public class Ingredient {
         this.kcal = kcal;
     }
 
-    public double getCarbsPr() {
+    public double getCarbs() {
         return carbs;
     }
 
-    public void setCarbsPr(double carbsPr) {
-        this.carbs = carbsPr;
+    public void setCarbs(double carbs) {
+        this.carbs = carbs;
     }
 
     public double getFat() {
